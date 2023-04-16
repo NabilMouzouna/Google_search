@@ -1,9 +1,6 @@
 import SearchResultContextConsumer from "../../context/GoogleAPIContext"
 import React,{ useEffect,useState } from "react"
 import {useLocation} from 'react-router-dom'
-import ReactPlayer from "react-player"
-import Loading from "./Loading"
-import Search from "../Search"
 const ResultContent = () => {
     const location = useLocation()
     const {isLoading,GetResult,result,Search} = SearchResultContextConsumer()
